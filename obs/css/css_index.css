@@ -1,0 +1,158 @@
+footer, nav, header, section, aside {
+ 
+display: block
+ 
+}
+
+body{
+	 margin: 0 auto 0 auto;
+	 min-width:1000px;
+	 max-width:2000px;
+	 
+		
+ }
+
+
+
+
+
+
+ textarea {
+    width: 100%; /* Ширина поля в процентах */
+    height: 100px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+	border-radius: 5px;	
+   }
+
+/*------------------------------------------------------------*/
+A {
+    color: #858585; /* Цвет ссылок */
+	text-decoration: none;
+   }
+   A:visited {
+    color: #858585; /* Цвет посещенных ссылок */
+	text-decoration: none;
+   }
+   A:hover {
+    color: #000; /* Цвет активных ссылок */
+	text-decoration: none;
+   }
+
+
+/*header---------------------------------------*/
+
+	.header1{
+
+	}
+	
+ .imgh {
+    float:left; 
+	margin: 0px 	5px 0px 0;
+	width:90vw;
+	height:35%;
+	position:absolute;
+	
+   }
+
+   #h_nav{			
+    font-size: 100%; 
+    font-weight: bold; 
+	margin: 0px 0px 0 0;	
+	text-align: center;
+	position: relative;
+	float: right;
+}
+
+.h_nav_f{
+	background: #fc0; 
+ 	font-size: 200%; 
+    font-weight: bold; 
+	margin: 230px 0px 0 0;	
+	width:100%;
+	text-align: center;
+	position: relative;
+	float: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);		
+
+}
+/*body--------------------------------------------------*/
+.b_news{
+	background: #F5F5F5; 
+ 	font-size: 100%; 
+    font-weight: bold; 
+	margin: 20px 0px 0 0;	
+	width:45vw;	
+	
+	position: relative;
+	float: left;
+	opacity: 0.7;
+	box-shadow: 0 0 10px rgba(51,102,0,0.7);		
+	padding-left: 1.5vw;
+	border-radius: 5px 5px;
+
+}
+.b_news:hover{
+
+		opacity: 1;
+
+}
+.b_memb{
+	background: #F5F5F5; 
+ 	font-size: 100%; 
+    font-weight: bold; 
+	margin: 20px 0px 0 0;	
+	width:50%;
+	box-shadow: 0 0 10px rgba(51,102,0,0.7);		
+
+	position: relative;
+	float: right;
+	padding-left: 1vw;
+		border-radius: 5px 5px;
+
+	
+}
+#phmp{
+
+	padding: 5px;
+}
+#lmp{
+	float: right;
+	font-style: italic;
+	color: #C0C0C0;
+	
+}
+/*----------4leni polati------------*/
+
+
+.leftimg {
+    float:left; 
+    margin: 7px 7px 7px 0;
+  }
+
+
+  #uisp{
+  	list-style-type: none;
+  }
+  #hcp{
+  	color: #00f;
+  }
+  #hcp:hover{
+  	  	color: #f00;
+
+  }
+
+  .b_cp{
+	background: #F5F5F5; 
+ 	font-size: 100%; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);		
+	width:80vw;	
+	margin:  20px 11vw ;
+	position: relative;
+	float: left;
+	padding-left: 1.5vw;
+
+}
+#sht{
+	text-indent: 1vw;
+	font-family:  "PT Sans","Trebuchet MS","Droid Sans","Helvetica Neue","Nimbus Sans L",sans-serif;
+}
