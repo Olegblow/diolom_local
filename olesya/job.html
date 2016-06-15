@@ -1,0 +1,86 @@
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Slides, A Slideshow Plugin for jQuery</title>
+	
+	<link rel="stylesheet" href="css/global.css">
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+	<script src="jquery-2.2.3.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 200,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+<header class="header1" >
+<p><img src="media/1.jpg" class="imgh"  ></p>
+<p id="th">Мы находимся по адресу:</p><p id="th"> Россия, 680021,г. Хабаровск, ул. Некрасова, 44</p>
+
+
+<nav class="h_nav_f">
+
+	<a id="" href="index.php" title="rez">О КОМПАНИИ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a id="" href="job.php" title="rez">НАШИ РАБОТЫ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href="#" title="rez">РАСЧЕТ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a id="go" href="#" title="rez">РЕГИСТРАЦИЯ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	
+</nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+	<div id="container">
+		<div id="products_example">
+			<div id="products">
+				<div class="slides_container">
+					<a href="#" ><img src="img/1144953-3-2x.jpg" width="366" alt="1144953 3 2x"></a>
+					<a href="#" ><img src="img/1144953-1-2x.jpg" width="366" alt="1144953 1 2x"></a>
+					<a href="#" ><img src="img/1144953-2-2x.jpg" width="366" alt="1144953 2 2x"></a>					
+					<a href="#" ><img src="img/1144953-4-2x.jpg" width="366" alt="1144953 4 2x"></a>
+					<a href="#" ><img src="img/1144953-5-2x.jpg" width="366" alt="1144953 5 2x"></a>
+					<a href="#" ><img src="img/1144953-6-2x.jpg" width="366" alt="1144953 6 2x"></a>
+					<a href="#" ><img src="img/1144953-p-2x.jpg" width="366" alt="1144953 P 2x"></a>
+				</div>
+				<ul class="pagination">
+					<li><a href="#"><img src="img/1144953-3-2x.jpg" width="55" alt="1144953 3 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-1-2x.jpg" width="55" alt="1144953 1 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-2-2x.jpg" width="55" alt="1144953 2 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-4-2x.jpg" width="55" alt="1144953 4 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-5-2x.jpg" width="55" alt="1144953 5 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-6-2x.jpg" width="55" alt="1144953 6 2x"></a></li>
+					<li><a href="#"><img src="img/1144953-p-2x.jpg" width="55" alt="1144953 P 2x"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
