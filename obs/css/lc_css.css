@@ -1,0 +1,106 @@
+footer, nav, header, section, aside {
+ 
+display: block
+ 
+}
+
+body{
+	 margin: 0 auto 0 auto;
+	 min-width:1000px;
+	 max-width:2000px; 
+		
+ }
+
+
+
+
+
+
+ textarea {
+    width: 100%; /* Ширина поля в процентах */
+    height: 100px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+	border-radius: 5px;	
+   }
+
+/*------------------------------------------------------------*/
+A {
+    color:#1F1F1F   ; /* Цвет ссылок */
+	text-decoration: none;
+   }
+	   A:visited {
+	    color: #1F1F1F   ; /* Цвет посещенных ссылок */
+		text-decoration: none;
+	   }
+   A:hover {
+    color: #000 ; /* Цвет активных ссылок */
+	text-decoration: none;
+   }
+
+
+/*header---------------------------------------*/
+header{
+	background:#C3C6C6 ; 
+ 	font-size: 120%; 
+    font-weight: bold; 
+ 	float: left;
+ 	width:100vw;
+
+	text-align: center;
+	position: relative;
+	opacity: 0.9;
+
+}
+
+/*body--------------------------------------------------*/
+.linfo{
+background: #F5F5F5; 
+ 	font-size: 100%; 
+    font-weight: bold; 
+	width:25vw;		
+	opacity: 0.9;
+	box-shadow: 0 0 5px rgba(51,102,0,0.7);		
+	padding-left: 1.5vw;
+	border-radius: 5px 5px;
+	position: relative;
+	top: 3vw;
+	left: 0.5vw;
+}	
+
+.dei{
+
+
+	background: #F5F5F5; 
+ 	font-size: 100%; 
+	width:69%;
+	box-shadow: 0 0 10px rgba(51,102,0,0.7);		
+
+	position: relative;
+	float: right;
+	padding-left: 1vw;
+	border-radius: 5px 5px;
+	right: 0.5vw;
+	top:1.25vw;
+
+}
+
+
+/*footer-------------------------------------*/
+footer{
+
+  color: #000;
+  position: relative;
+  float: left;
+  width: 100vw;
+  background:  #C3C6C6;
+  margin: 2.5vw 0 0 0;
+
+}
+
+/*-----------*/
+.title{
+
+	width: 68vw;
+	height:3vw;
+}
+.suitup{width: 68vw;height: 9vw;}
