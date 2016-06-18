@@ -55,24 +55,39 @@ include('header.php')
 						
 
 				?>
-					
 				</div>
 				<ul class="pagination">
 
 					<?php 
 						for ($i=1; $i < 14; $i++) { 
 							echo '<li><a href="#"><img src="img/'.$i.'.jpg" width="55" alt="1144953 1 2x"></a></li>';
+							
 						}
 					 ?>
 					
 				</ul>
+					
+
+
 			</div>
+
 		</div>
 		
 	</div>
 
+</section>
+
+
+<section id="namephoto">
+	<p>
+		Натяжной потолок:
+	</p>
+
+
+
 
 <script>
+
 
 	
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы

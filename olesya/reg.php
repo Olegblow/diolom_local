@@ -22,7 +22,6 @@ include 'db.php';
 
 <?php  
 include('header.php');
-
 ?>
 	
 <section id="ras">
@@ -30,7 +29,7 @@ include('header.php');
 	<aside id="rasa">
 
 		
-		<form method="post" action="#" id="regf">	
+		<form method="post" action="aut/regs.php" >	
 		<h2> Регистация</h2>
 		<table>
 
@@ -40,7 +39,7 @@ include('header.php');
 				Введите login
 			</td>
 			<td>
-				<input name="login" placeholder="Login">
+				<input name="login" placeholder="Login" id="login">
 			</td>
 		</tr>
 
@@ -50,7 +49,7 @@ include('header.php');
 				Введите Имя
 			</td>
 			<td>
-				<input name="name" placeholder="Name" autofocus required pattern="[a-zA-Z0-9]+">	
+				<input name="name" id="fname" placeholder="Name" autofocus required pattern="[a-zA-Z0-9]+">	
 			</td>
 		</tr>
 
@@ -60,7 +59,7 @@ include('header.php');
 				Введите e-mail
 			</td>
 			<td>
-			<input type="email" name="email"  placeholder="Email" ></br>
+			<input type="email" id="email" name="email"  placeholder="Email" ></br>
 			</td>
 		</tr>	
 
@@ -69,7 +68,7 @@ include('header.php');
 			<td>
 				Введите номер телефона
 			<td>
-			<input type="phon" name="phon" placeholder="phone" >
+			<input type="phon" name="phon" placeholder="phone" id="phone" >
 			</td>
 		</tr>
 
@@ -80,7 +79,7 @@ include('header.php');
 				Введите пароль
 			</td>
 			<td>
-			<input type="password" name="pass" placeholder="Password" >
+			<input type="password" name="pass" placeholder="Password" id="pwd"> </input>
 			</td>
 		</tr>
 
@@ -91,7 +90,7 @@ include('header.php');
 			<td>
 			</td>
 			<td>
-			<input type="submit" value="regestration" id="ajax">
+				<input type="submit" value="Зарегистрироваться" id="ajax_reg">
 			</td>
 		</tr>
 
@@ -102,12 +101,12 @@ include('header.php');
 
 	
 	</aside>
-	
-	
+
+
+	<script src="js/modal.js"> </script>
+
 	
 </section>
-
-<script src="js/ajax_test.js"> </script>
 
 </body>
 </html>

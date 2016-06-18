@@ -1,4 +1,4 @@
-<?php
+	<?php
 include 'db.php';
 
 
@@ -13,16 +13,16 @@ if(isset($_POST['login'] ['pass'] ))
 	
 	if($login==""|| $pwd=="")
 	{
-		echo "zzzz";
+		echo "oshibka";
 	}
 	else
 		{
 		//echo $login;
 		
-		$query = "SELECT login,pass FROM user WHERE login='$login' AND pwd='$pwd'";
+		$query = "SELECT login,pwd FROM user WHERE login='$login' AND pwd='$pwd'";
 		//$result = mysql_query();
 		}
-			if($result = $mysqli->query($query)==0)
+			if($result = $mysqli->query($query)!=0)
 			{
 				echo "roflan </br> ";
 				$_SESSION['user']=$login;

@@ -24,6 +24,17 @@ body{
 
 }
 
+footer{
+
+  color: #f00;
+  position: relative;
+  float: left;
+  width: 100vw;
+  background:  #fc0;
+
+  margin: 2vw 0 0 0;
+}
+
  textarea {
     width: 100%; /* Ширина поля в процентах */
     height: 100px; /* Высота поля в пикселах */
@@ -127,9 +138,22 @@ H2{
   color:#003947;
   font-family:"Arial Black",Arial,FreeSans,sans-serif;
   font-weight: bold; 
+  float: left;
+  width: 67vw;   
+}
+
+#tiot{
+
+font-size: 100%;
+  color:#003947;
+  font-family:"Arial Black",Arial,FreeSans,sans-serif;
+  font-weight: bold; 
+  float: right;
+  width: 28vw;
+  padding-left: 1vw;
 
 
-   
+
 }
 
 #ras{
@@ -258,14 +282,15 @@ input {
   background: #aaa;
   color:#f00;
   padding: 10px;   
-  
   margin-top: 15px;
   
 }
 #otzbloc{
   color:;
-  width:50%;
-  margin: auto;
+  width:60vw;
+  margin: auto; 
+
+
   background: #aaa;
   padding-left: 1vw;
   font-family: 'Open Sans', sans-serif;

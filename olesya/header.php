@@ -1,6 +1,6 @@
 <header class="header1" >
 
-<p id="th">Мы находимся по адресу:</p><p id="th"> Россия, 680021,г. Хабаровск, ул. Некрасова, 44</p>
+<p id="th">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p><p id="th">ООО Перспектива</p>
 
 
 <nav class="h_nav_f">
@@ -9,7 +9,7 @@
 	<a id="" href="job.php" title="rez">НАШИ РАБОТЫ </a>&nbsp&nbsp&nbsp
 	<a href="zakaz.php" title="rez">РАСЧЕТ </a>&nbsp&nbsp&nbsp&nbsp
 	<a href="otziv.php" title="otzivi"> ОТЗЫВЫ </a>&nbsp&nbsp&nbsp
-	<a id="go" href="#" title="rez">РЕГИСТРАЦИЯ </a>&nbsp&nbsp&nbsp
+	<a id="go" href="#" title="rez">ВХОД  </a>&nbsp&nbsp&nbsp
 
 	
 </nav>
@@ -26,25 +26,27 @@
 
 if ($lg){
 	echo $_SESSION['user'];
-	echo '  <a href="aut/logout.php" title="logout">▲logout</a> ';
+	echo '  <a href="#" title="logout" id="logout"> Выйти</a> ';
 }
 else{
 	
 	echo <<< _END
 		
 		<form method="post" action="login.php">
-			<p>Логин:</p>
-			<input name="login" placeholder="Login">
+			<p>Логин:</p>	
+			<input name="login" placeholder="Login" id="login">
 			<p >Пароль:</p>
 			
-			<input type="password" name="pass" placeholder="Password" >
+			<input type="password" name="pass" placeholder="Password" id="pwd">
 			<div id="lower">
-				<input type="submit" value="Войти">
+				<input type="button" value="Войти" id="ajax_aut">
+				
 				<a href="reg.php">Или зарегестрируйтесь</a>
 
 
 			</div>
 </form>
+
 
 _END;
 		}
@@ -61,3 +63,6 @@ _END;
 
 </aside>
 <aside id="overlay"></aside><!-- Пoдлoжкa -->
+<script src="js/ajaxlog.js"> </script>
+<script src="js/ajax_aut.js"> </script>
+

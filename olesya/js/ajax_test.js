@@ -36,12 +36,14 @@ $.ajax({
   cache: false,
   success: function(html){
     $("#results").append(html);
+    //alert("Отзыв успешно добавлен");
+    document.location.reload();
   }
 });
 
 
 
-
+   // document.location.reload();
 
 
     });

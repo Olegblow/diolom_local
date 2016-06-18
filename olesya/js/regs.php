@@ -19,7 +19,7 @@ if(isset($_POST['login'] ))
 	
 	if($login==""||$pwd==""||$name==""||$lname=""||$em==""||$phon="")
 	{
-		echo "zzzaa";
+		echo "Пожалуйста введите все данные";
 	}
 	else
 		{
@@ -27,7 +27,7 @@ if(isset($_POST['login'] ))
 			$query = "INSERT INTO user (login,pwd,name,email,phon)  VALUES('$login','$pwd','$name','$em','$phon')";
 			if($result = $mysqli->query($query))
 				{
-					echo "roflan </br> ";
+					echo 'Спасибо за регистрацию:  </br> <a href="../index.php">Верунться на главную старницу</a> ';
 
 		//$result = mysqli_query("SELECT login FROM user WHERE login='$login'");
 		//}
@@ -46,5 +46,6 @@ if(isset($_POST['login'] ))
 			}
 		
 }
+
 
 ?>

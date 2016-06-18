@@ -33,13 +33,13 @@ $query = "SELECT * FROM post LIMIT 0,4";
 
 	if ($result = $mysqli->query($query)) {
 		
-		echo "	<h2>ОТзывы </h2>";	
+		echo "	&nbsp&nbsp&nbsp";	
 		 
 
 
     	$row = $result->fetch_all(MYSQLI_ASSOC);
 
-    	echo '<ul id="">'; 
+    	//echo '<ul id="">'; 
 
     	foreach ($row as $val):{
     		//echo ' <li>';
@@ -61,7 +61,7 @@ $query = "SELECT * FROM post LIMIT 0,4";
     		   		
     	} endforeach;
 	}
-	echo '</ul>';
+	//echo '</ul>';
 
 
 	$result->close();
@@ -90,7 +90,7 @@ $query = "SELECT * FROM post LIMIT 0,4";
 		<form   action="addp.php" method="post" >
 		
 		<p><textarea name="text" id="text1" ></textarea></p>		
-		<input type="button" value="Рассчитать" id="ajax">
+		<input type="button" value="Отправить" id="ajax">
 		</form>
 	
 	</aside>
