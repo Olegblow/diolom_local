@@ -40,11 +40,11 @@ else{
 <nav class="h_nav_f">
 
 	<a href="index.php" title="rez">Главная </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="#" title="rez">О Палате </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="mp.php" title="rez">Члены палаты </a>&nbsp&nbsp&nbsp&nbsp
+	<a href="Sovet.php" title="rez">О Совете </a>&nbsp&nbsp&nbsp&nbsp
+	<a href="mp.php" title="rez">Члены совета </a>&nbsp&nbsp&nbsp&nbsp
 	<a href="news.php" title="rez">Новости </a>&nbsp&nbsp&nbsp&nbsp
 	<a href="file.php" title="rez">Документы</a>&nbsp&nbsp&nbsp&nbsp	
-	<a href="#" title="rez">Мероприятия</a>&nbsp
+	<a href="mer.php" title="rez">Мероприятия</a>&nbsp
 
 </nav>
 </header>

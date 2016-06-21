@@ -3,25 +3,51 @@ include 'php/db.php';
 ?>
 
 
-<?php  
-include('header.php')
+	<?php  
+	include('header.php')
 
-?>
+	?>
 
 
 <section>
 	<aside class="b_news">
 
-	<a href="#"><h2>Диплом администрации города Хабаровска</h2></a>
-	<p>
-	27 мая 2016 года состоялось заседание двадцати двух членов Общественной палаты Хабаровского края III состава по процедуре конкурсного отбора одиннадцати членов палаты, предложенных местными общественными организациями.
-	</p>
-		<a href="#" id="lmp"> Другие новости</a>
+	<?php  
+
+	
+
+	$query = "SELECT * FROM news ORDER BY ID DESC LIMIT 0,3 ";
+
+	if ($result = $mysqli->query($query)) {
+
+		echo "	<h2>Новости</h2>";	
+    	$row = $result->fetch_all(MYSQLI_ASSOC);
+    	
+
+    	foreach ($row as $val):{
+    		
+
+    		echo ' <p> <img  class="leftimg"   width="100px"  height="120px" src="media/tnews/'.$val['ID'].'.jpg"  >' ;
+    		echo '<time>'.$val['DATE'].'</time>';
+
+    		echo '<a id="hcp" href="news.php?id='.$val['ID'].'"> <h2 >'.$val['TITLE'].'</h2> </a>';
+    		echo $val['POST'].'</p>';
+    		
+
+    		echo '</br>';
+    		echo '</br>';
 
 
-	<time>
-	27-05-2016
-	</time>
+
+
+    		   		
+    	} endforeach;
+	}
+	echo '</ul>';
+
+
+	$result->close();
+	?>
 
 	</aside>
 
@@ -38,9 +64,9 @@ include('header.php')
 	<table>
 	<?php  
 
-	for ($i=1; $i < 7 ; $i++) { 
+	for ($i=1; $i < 6 ; $i++) { 
 		echo "<td>";
-		echo'<a id="phmp" href="#" ><img src="media/mp/1.jpg" width="100px"  height="120px" alt="Белоглазов А.С."></a>';
+		echo'<a id="phmp" href="#" ><img src="media/mp/1.png" width="120px"  height="120px" alt="Белоглазов А.С."></a>';
 		echo "</td>";
 	}
 
@@ -56,20 +82,6 @@ include('header.php')
 
 
 
-<aside class="b_news">
-
-	<a href="#"><h2>Диплом администрации города Хабаровска</h2></a>
-	<p>
-	27 мая 2016 года состоялось заседание двадцати двух членов Общественной палаты Хабаровского края III состава по процедуре конкурсного отбора одиннадцати членов палаты, предложенных местными общественными организациями.
-	</p>
-		<a href="#" id="lmp"> Другие новости</a>
-
-
-	<time>
-	27-05-2016
-	</time>
-
-	</aside>
 
 <aside class="b_memb">
 
@@ -98,22 +110,6 @@ include('header.php')
 
 	</aside>
 
-<aside class="b_news">
-
-	<a href="#	"><h2>Диплом администрации города Хабаровска</h2></a>
-
-	<p>
-	27 мая 2016 года состоялось заседание двадцати двух членов Общественной палаты Хабаровского края III состава по процедуре конкурсного отбора одиннадцати членов палаты, предложенных местными общественными организациями.
-	</p>
-		<a href="#" id="lmp"> Другие новости</a>
-
-
-	<time>
-	27-05-2016	Овсейчк Олег Олегович.
-
-	</time>
-
-	</aside>
 
 
 

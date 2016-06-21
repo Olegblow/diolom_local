@@ -23,14 +23,14 @@ include('header.php')
 
 	if ($result = $mysqli->query($query)) {
 
-		echo "	<h2>Члены палаты</h2>";	
+		echo "	<h2>Члены совета</h2>";	
     	$row = $result->fetch_all(MYSQLI_ASSOC);
     	echo '<ul id="uisp">'; 
 
     	foreach ($row as $val):{
     		echo ' <li>';
 
-    		echo ' <p> <img  class="leftimg"   width="100px"  height="120px" src="media/mp/'.$val['ID'].'.jpg"  >' ;
+    		echo ' <p> <img  class="leftimg"   width="100px"  height="120px" src="media/mp/1.png"  >' ;
     		echo '<a id="hcp" href="mp.php?id='.$val['ID'].'"> <h2 >'.$val['FIO'].'</h2> </a>';
     		echo $val['POST'].'</p>';
     		
@@ -61,7 +61,7 @@ $query = "SELECT * FROM mp WHERE ID='$mpid'";
     		echo '<h2>'.$row[1].'</h2>';
     		echo '<p id="sht">'.$row[2].'</p>';
 
-    		echo ' <p id="sht"> <img  class="leftimg"   width="180px"  height="225px" src="media/mp/'.$row[0].'.jpg"  >' ;
+    		echo ' <p id="sht"> <img  class="leftimg"   width="180px"  height="225px" src="media/mp/1.png"  >' ;
     		
     		
     		echo $row[3].'</p>';

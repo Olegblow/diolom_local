@@ -22,12 +22,11 @@
 
 <nav class="h_nav_f">
 
-	<a href="#" title="rez" id="go">	aaa </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="#" title="rez">О Палате </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="#" title="rez">Члены палаты </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="#" title="rez">Новости </a>&nbsp&nbsp&nbsp&nbsp
-	<a href="#" title="rez">Документы</a>&nbsp&nbsp&nbsp&nbsp	
-	<a href="#" title="rez">Мероприятия</a>&nbsp
+	<a href="#" title="rez" id="news">Добавить новость</a>&nbsp&nbsp&nbsp&nbsp
+	<a href="#" title="rez" id="mem"> Добавить членов совета</a>&nbsp&nbsp&nbsp&nbsp
+	<a href="#" title="rez">Добавить Докумен </a>&nbsp&nbsp&nbsp&nbsp
+	<a href="#" title="rez">Добавть Мероприятия</a>&nbsp&nbsp&nbsp&nbsp
+	
 
 </nav>
 </header>

@@ -26,11 +26,11 @@ body{
 
 /*------------------------------------------------------------*/
 A {
-    color:#121B91; /* Цвет ссылок */
+    color:#fff; /* Цвет ссылок */
 	text-decoration: none;
    }
 	   A:visited {
-	    color: #121B91; /* Цвет посещенных ссылок */
+	    color: #fff; /* Цвет посещенных ссылок */
 		text-decoration: none;
 	   }
    A:hover {
@@ -85,7 +85,7 @@ A {
 	
 	position: relative;
 	float: left;
-	opacity: 0.7;
+	opacity: 0.9;
 	box-shadow: 0 0 10px rgba(51,102,0,0.7);		
 	padding-left: 1.5vw;
 	border-radius: 5px 5px;

@@ -8,24 +8,46 @@ include('header.php')
 
 
 <section>
-	<section class="dei">
-	<h1>Добавить новость:</h1>
-	<textarea class="title" placeholder="Title?..."></textarea>
-
-	<textarea class="suitup" placeholder="что нового?..."></textarea>
-	<button class="go">Добавить новость</button>
+<section class="dei1">
+	У вас новое задание:
+	<p>бете волков</p>
 
 	</section>
 
+	<?php
+include 'bloc_news.php'; 
+include 'bloc_members.php';
+
+	 ?>
+
+
+	
 
 <aside class="linfo">
-	<?php 
-	echo 'Имя 	'.$_SESSION['user'].'</br>';
-	echo $_SESSION['user'].'</br>';
-	echo $_SESSION['user'].'</br>';
-	echo $_SESSION['user'].'</br>';
-	echo $_SESSION['user'].'</br>';
+<table>
+	<tr>
+		<td>
+				<img src="../media/icon/user.png" class="userimg">
+
+		</td>
+
+		<td>
+			<?php 
+	echo 'Имя: 	'.$_SESSION['user'].'</br>';
+	echo 'Должность: '.$_SESSION['user'].'</br>';
+	echo 'Права: '.$_SESSION['user'].'</br>';
+
 	?>
+
+		</td>
+
+
+	</tr>
+		
+	
+
+</table>
+
 	<p>
 		информация о пользователе
 	</p>
@@ -68,6 +90,9 @@ include('header.php')
 include 'footer.php'; 
 ?>
 <script type="text/javascript" src="../js/red.js"></script>
+<script type="text/javascript" src="../js/ajax/ajax_add_news.js"></script>
+<script type="text/javascript" src="../js/ajax/ajax_add_mem.js"></script>
+
 
 </body>
 

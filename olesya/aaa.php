@@ -45,6 +45,7 @@ include('header.php')
 
 </section>
 
+<script src="js/ajax_reg.js"> </script>
 
 
 <script src="js/ajax_test.js"> </script>
